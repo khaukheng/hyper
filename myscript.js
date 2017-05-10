@@ -126,9 +126,7 @@ $(document).ready(function(){
     };
     function checkcurrentlevel(){
         var level=parseInt(getCookie("currentlevel"));
-        alert(level);
         for (var j = level +1; j <=7 ; j++) {
-            alert("j= "+j);
             var ID = "p"+j;
             var ID2 = "pa"+j;
             var ID3 = "pb"+j;
