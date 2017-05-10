@@ -140,6 +140,69 @@ $(document).ready(function(){
         };
     }
 
+    var currentlocation = location.pathname.substring(location.pathname.lastIndexOf("/")+1);
+
+    function prev(){
+      switch(currentlocation){
+        case "index.html":
+          alert("some error occured");
+          break;
+        case "page2.html":
+          location.href="index.html";
+          break;
+        case "page3.html":
+          location.href="page2.html";
+          break;
+        case "page4.html":
+          location.href="page3.html";
+          break;
+        case "page5.html":
+          location.href="page4.html";
+          break;
+        case "page6.html":
+          location.href="page5.html";
+          break;
+        case "page7.html":
+          location.href="page6.html";
+          break;
+        case "default":
+          alert("previous page not found");
+          break;
+      }
+    };
+
+    function next(){
+       switch(currentlocation){
+        case "index.html":
+          location.href="page2.html";
+          break;
+        case "page2.html":
+          location.href="page3.html";
+          break;
+        case "page3.html":
+          location.href="page4.html";
+          break;
+        case "page4.html":
+          location.href="page5.html";
+          break;
+        case "page5.html":
+          location.href="page6.html";
+          break;
+        case "page6.html":
+          location.href="page7.html";
+          break;
+        case "page7.html":
+          alert("no next page found");
+          break;
+        case "default":
+          alert("previous page not found");
+          break;
+      }
+      };
+    
+
+    //
+
 /*
     var css= 'a:focus,a:hover{text-decoration:none }';
     var style = document.createElement('style');

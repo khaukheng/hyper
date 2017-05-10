@@ -12,6 +12,11 @@ body{
   color:grey;
 }
 
+button{
+  width:100%;
+  
+}
+
 div.header{
         margin-left: 9%;
         margin-right: 9%;
