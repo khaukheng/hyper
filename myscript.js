@@ -134,7 +134,7 @@ $(document).ready(function(){
         };*/
         alert(level);
         for (var j = level +1; j <=7 ; j++) {
-            var ID = "p"+i;
+            var ID = "p"+j;
             var ID2 = "pa"+j;
             var ID3 = "pb"+j;
 
