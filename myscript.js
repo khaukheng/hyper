@@ -137,12 +137,13 @@ $(document).ready(function(){
             var ID = "p"+i;
             var ID2 = "pa"+j;
             var ID3 = "pb"+j;
-            $(ID).addClassName("unable");
+
             //document.getElementById(ID).className += " unable";
             document.getElementById(ID2).style.cursor="not-allowed";
             document.getElementById(ID3).style.cursor="not-allowed";
             document.getElementById(ID2).removeAttribute('href');
             document.getElementById(ID3).removeAttribute('href');
+            $(ID).addClassName("unable");
         };
     }
 
