@@ -126,25 +126,19 @@ $(document).ready(function(){
     };
     function checkcurrentlevel(){
         var level=parseInt(getCookie("currentlevel"));
-        /*
-        for (var i = level ; i >= 1; i--) {
-            if(i>=8){continue;}
-            var ID = "p"+i;
-            document.getElementById(ID).classList.remove("unable");
-        };*/
         alert(level);
         for (var j = level +1; j <=7 ; j++) {
-          alert("j= "+j);
+            alert("j= "+j);
             var ID = "p"+j;
             var ID2 = "pa"+j;
             var ID3 = "pb"+j;
             var d = document.getElementById(ID);
             d.className += " unable";
-            //document.getElementById(ID).className += " unable";
             document.getElementById(ID2).style.cursor="not-allowed";
             document.getElementById(ID3).style.cursor="not-allowed";
             document.getElementById(ID2).removeAttribute('href');
             document.getElementById(ID3).removeAttribute('href');
+            
         };
     }
 
