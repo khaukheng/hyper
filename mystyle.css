@@ -188,16 +188,15 @@ div.content{
     border-style: solid;
     border-color: darkcyan;
     border-radius: 20px;
-  padding: 20px;
-  margin-top: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 10%;
-  color: black;
-  text-align: left;
-  overflow: auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    color: black;
+    text-align: left;
+    overflow: auto;
 }
-
 th.plans{
     text-align: center;
 }
@@ -208,6 +207,17 @@ li.space{
 
 table.mytable{
     table-layout: fixed;
+    border-style: solid;
+    border-width: medium;
+    border-color: darkcyan;
+    
+}
+
+th,td,tr{
+    border-width: medium;
+    border-style: solid;
+    border-color: darkcyan;
+    
 }
 
 ul.comparetable{
