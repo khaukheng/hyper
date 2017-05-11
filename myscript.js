@@ -60,7 +60,6 @@ $(document).ready(function(){
             }
             if(winTop + $(window).height() == $(document).height()) {
               $(this).addClass("slide1");
-              alert("bottom");
             }
         });
       });
