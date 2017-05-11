@@ -189,6 +189,23 @@ div.content{
   text-align: left;
   overflow: auto;
 }
+
+th.plans{
+    text-align: center;
+}
+
+li.space{
+    padding-bottom: 15px;
+}
+
+table.mytable{
+    table-layout: fixed;
+}
+
+ul.comparetable{
+    list-style: none;
+    padding-left: 2px;
+}
 /*
 .title{
   color:blue;
