@@ -34,7 +34,10 @@ function section1(){
 			setCookie('section1',cookies,0.5);
 		}
 	}
+<<<<<<< HEAD
 	next();
+=======
+>>>>>>> fc7bc28ad200525378f221d2c6be38ded2670d5f
 }
 
 function section2(){
@@ -51,13 +54,20 @@ function section2(){
 			setCookie('section2',cookies,0.5);
 		}
 	}
+<<<<<<< HEAD
 	next();
+=======
+>>>>>>> fc7bc28ad200525378f221d2c6be38ded2670d5f
 }
 
 function section3(){
 	setCookie('section3','',0.5);
 	var cookies = getCookie('section3');
+<<<<<<< HEAD
 	if(document.getElementsByName('section3_0')[0].checked){
+=======
+	if(document.getElementsByName(section3_0)[0].checked){
+>>>>>>> fc7bc28ad200525378f221d2c6be38ded2670d5f
 		cookies = cookies + '1';
 		setCookie('section3',cookies,0.5);
 	}
@@ -66,12 +76,19 @@ function section3(){
 		setCookie('section3',cookies,0.5);
 	}
 	for (var i = 0; i < 3; i++) {
+<<<<<<< HEAD
 		if(document.getElementsByName('section3_1')[i].checked){
+=======
+		if(document.getElementsByName(section3_1)[i].checked){
+>>>>>>> fc7bc28ad200525378f221d2c6be38ded2670d5f
 			cookies = cookies + i;
 			setCookie('section3',cookies,0.5);
 		}
 	}
+<<<<<<< HEAD
 	next();
+=======
+>>>>>>> fc7bc28ad200525378f221d2c6be38ded2670d5f
 }
 
 function printpdf(){
@@ -91,7 +108,11 @@ function printpdf(){
 	,'6. I am afraid of surgery'
 	,'7. I am concerned that medication may damage my kidneys (or other organs)'];
 	//var cookie_section1 = '1000111';
+<<<<<<< HEAD
 	var cookie_section1 = getCookie('section1');
+=======
+	var cookie_section1 = getCookie(section1);
+>>>>>>> fc7bc28ad200525378f221d2c6be38ded2670d5f
 	for (var i = 0; i < 7; i++) {
 		doc.setFontType('normal');
 		doc.text(10, line_counter, arr_section1[i]);
@@ -103,10 +124,13 @@ function printpdf(){
 		doc.text(15, line_counter, choice);
 		line_counter = line_counter + 10;
 	}
+<<<<<<< HEAD
 	doc.setLineWidth(0.1);
 	doc.line(180, 275, 180, 283); // vertical line
 	doc.setFontType('normal');
 	doc.text(183,280,'Page 1');
+=======
+>>>>>>> fc7bc28ad200525378f221d2c6be38ded2670d5f
 	doc.addPage('a4','p');
 	doc.setFontSize(20);
 	doc.setFontType("bolditalic");
@@ -119,7 +143,11 @@ function printpdf(){
 	,'3. Do you have enough support and advice from your doctor or nurse to make a choice?'
 	,'4. Do you have enough support from your family to make a choice?'];
 	//var cookie_section2 = '1001';
+<<<<<<< HEAD
 	var cookie_section2 = getCookie('section2');
+=======
+	var cookie_section2 = getCookie(section2);
+>>>>>>> fc7bc28ad200525378f221d2c6be38ded2670d5f
 	for (var i = 0; i < 4; i++) {
 		doc.setFontType('normal');
 		doc.text(10, line_counter, arr_section2[i]);
@@ -129,10 +157,13 @@ function printpdf(){
 		doc.text(15, line_counter, choice);
 		line_counter = line_counter + 10;
 	}
+<<<<<<< HEAD
 	doc.setLineWidth(0.1);
 	doc.line(180, 275, 180, 283); // vertical line
 	doc.setFontType('normal');
 	doc.text(183,280,'Page 2');
+=======
+>>>>>>> fc7bc28ad200525378f221d2c6be38ded2670d5f
 	doc.setFontSize(20);
 	doc.setFontType("bolditalic");
 	doc.text(10,190,'Making a choice');
@@ -140,6 +171,7 @@ function printpdf(){
 	doc.setFontType("normal");
 	var splitTitle = doc.splitTextToSize('Now that you have learned about the advantages and disadvantages of each treatment options and know what is important to you, are you ready to make a decision about treating your hyperthyroidism relapse?', 180);
 	doc.text(10, 200, splitTitle);
+<<<<<<< HEAD
 	var cookie_section3 = getCookie('section3');
 	var choice = (cookie_section3.charAt(0) == '1') ? "Yes, I am ready" : "No, I am not ready";
 	doc.setFontType("bold");
@@ -160,4 +192,7 @@ function printpdf(){
 	doc.setFontType('normal');
 	doc.text(183,280,'Page 3');
 	doc.save("PDA_REPORT.pdf");
+=======
+
+>>>>>>> fc7bc28ad200525378f221d2c6be38ded2670d5f
 }
