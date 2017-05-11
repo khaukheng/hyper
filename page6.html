@@ -20,6 +20,8 @@
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+
 	<script src="myscript.js" type="text/javascript"></script>
 </head>
 <body onload="locateMe(); checkcurrentlevel()">
@@ -129,23 +131,23 @@
 					<div class="form-group">
 				    	<label>Now that you have learned about the advantages and disadvantages of each treatment options and know what is important to you, are you ready to make a decision about treating your hyperthyroidism relapse?</label>
 				      	<div class="radio">
-				        	<label><input type="radio" name="section3" value="male">Yes, I am ready<br></label>
+				        	<label><input type="radio" name="section3_0" value="male">Yes, I am ready<br></label>
 				     	</div>
 				     	<div class="radio">
-				        	<label><input type="radio" name="section3" value="female">No, I am not ready<br><br></label>
+				        	<label><input type="radio" name="section3_0" value="female">No, I am not ready<br><br></label>
 				      	</div>
 				    </div>
 
 				    <div class="form-group">
 				    	<label>If you are ready to make a decision, which choice do you prefer?</label>
 				      	<div class="radio">
-				        	<label><input type="radio" name="section3" value="gg1">Anti-thyroid medication<br></label>
+				        	<label><input type="radio" name="section3_1" value="gg1">Anti-thyroid medication<br></label>
 				     	</div>
 				     	<div class="radio">
-				        	<label><input type="radio" name="section3" value="gg2">Radioactive Iodine<br></label>
+				        	<label><input type="radio" name="section3_1" value="gg2">Radioactive Iodine<br></label>
 				      	</div>
 				      	<div class="radio">
-				        	<label><input type="radio" name="section3" value="gg3">Thyroid surgery<br><br></label>
+				        	<label><input type="radio" name="section3_1" value="gg3">Thyroid surgery<br><br></label>
 				      	</div>
 				    </div>
   
@@ -167,7 +169,7 @@
 					<button class="btn btn-danger" id="btn-prev" onclick="prev()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Previous</button>	
 					</div>
 					<div class="col-sm-2">
-					<button class="btn btn-primary" id="btn-next" onclick="next()">Next <i class="fa fa-arrow-right" aria-hidden="true";></i></button>
+					<button class="btn btn-primary" id="btn-next" onclick="section3()">Next <i class="fa fa-arrow-right" aria-hidden="true";></i></button>
 					</div>
 				</div>
 				<div class="col-sm-4 col-lg-3"></div>
@@ -210,5 +212,6 @@
 	    </div>
 	  </div>
 	</div>
+	<script src="cookies.js"></script>
 </body>
 </html>
