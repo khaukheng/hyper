@@ -38,22 +38,7 @@ $(document).ready(function(){
       }
   }
 
-  //The first two statement slide in
-    $(".fastanim").each(function(){
-          $(this).addClass("slide1");  
-    });
-
   
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide1");
-        }
-    });
-  });
 
 
 
@@ -71,6 +56,9 @@ $(document).ready(function(){
 
           var winTop = $(window).scrollTop();
             if (pos < winTop + 600) {
+              $(this).addClass("slide1");
+            }
+            if($(window).scrollTop() + $(window).height() == $(document).height()) {
               $(this).addClass("slide1");
             }
         });
