@@ -21,18 +21,32 @@ function getCookie(cname) {
   return ""; 
 }
 
-setCookie('section1','',0.5);
-var cookies = getCookie('section1');
-function noob(){
-for (var i = 0; i < 7; i++) {
-	if(document.getElementsByName('section1')[i].checked){
-		cookies = cookies + '1';
-		setCookie('section1',cookies,0.5);
+function session1(){
+	setCookie('section1','',0.5);
+	var cookies = getCookie('section1');
+	for (var i = 0; i < 7; i++) {
+		if(document.getElementsByName('section1')[i].checked){
+			cookies = cookies + '1';
+			setCookie('section1',cookies,0.5);
+		}
+		else{
+			cookies = cookies + '0';
+			setCookie('section1',cookies,0.5);
+		}
 	}
-	else{
-		cookies = cookies + '0';
-		setCookie('section1',cookies,0.5);
-	}
-}
 }
 
+function session2(){
+	setCookie('section2','',0.5);
+	var cookies = getCookie('section2');
+	for (var i = 0; i < 7; i=i+2) {
+		if(document.getElementsByName('section2')[i].checked){
+			cookies = cookies + '1';
+			setCookie('section2',cookies,0.5);
+		}
+		else{
+			cookies = cookies + '0';
+			setCookie('section2',cookies,0.5);
+		}
+	}
+}
