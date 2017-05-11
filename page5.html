@@ -20,6 +20,8 @@
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+
 	<script src="myscript.js" type="text/javascript"></script>
 </head>
 <body onload="locateMe(); checkcurrentlevel()">
@@ -132,32 +134,32 @@
 				    <div class="form-group">
 				      <label>Do you know enough about the advantages and disadvantages of each option to make a choice?</label>
 				      <div class="radio">
-				        <label class="radio-inline"><input type="radio" name="section2" value="male">Yes</label>
-				        <label class="radio-inline"><input type="radio" name="section2" value="female">No</label>
+				        <label class="radio-inline"><input type="radio" name="section2_0" value="male">Yes</label>
+				        <label class="radio-inline"><input type="radio" name="section2_0" value="female">No</label>
 				      </div>
 				    </div>
 
 				    <div class="form-group">
 				      <label>Are you clear about which advantages and disadvantages are most important to you?</label>
 				      <div class="radio">
-				        <label class="radio-inline"><input type="radio" name="section2" value="male">Yes</label>
-				        <label class="radio-inline"><input type="radio" name="section2" value="female">No</label>
+				        <label class="radio-inline"><input type="radio" name="section2_1" value="male">Yes</label>
+				        <label class="radio-inline"><input type="radio" name="section2_1" value="female">No</label>
 				      </div>
 				    </div>
 
 				    <div class="form-group">
 				      <label>Do you have enough support and advice from your doctor or nurse to make a choice?</label>
 				      <div class="radio">
-				        <label class="radio-inline"><input type="radio" name="section2" value="male">Yes</label>
-				        <label class="radio-inline"><input type="radio" name="section2" value="female">No</label>
+				        <label class="radio-inline"><input type="radio" name="section2_2" value="male">Yes</label>
+				        <label class="radio-inline"><input type="radio" name="section2_2" value="female">No</label>
 				      </div>
 				    </div>
 
 				    <div class="form-group">
 				      <label>Do you have enough support from your family to make a choice?</label>
 				      <div class="radio">
-				        <label class="radio-inline"><input type="radio" name="section2" value="male">Yes</label>
-				        <label class="radio-inline"><input type="radio" name="section2" value="female">No</label>
+				        <label class="radio-inline"><input type="radio" name="section2_3" value="male">Yes</label>
+				        <label class="radio-inline"><input type="radio" name="section2_3" value="female">No</label>
 				      </div>
 				    </div>
 				    <br />
@@ -178,7 +180,7 @@
 					<button class="btn btn-danger" id="btn-prev" onclick="prev()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Previous</button>	
 					</div>
 					<div class="col-sm-2">
-					<button class="btn btn-primary" id="btn-next" onclick="next()">Next <i class="fa fa-arrow-right" aria-hidden="true";></i></button>
+					<button class="btn btn-primary" id="btn-next" onclick="section2()">Next <i class="fa fa-arrow-right" aria-hidden="true";></i></button>
 					</div>
 				</div>
 				<div class="col-sm-4 col-lg-3"></div>
@@ -221,5 +223,6 @@
 	    </div>
 	  </div>
 	</div>
+	<script src="cookies.js"></script>
 </body>
 </html>
