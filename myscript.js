@@ -78,6 +78,7 @@ $(document).ready(function(){
     };
 
     function locateMe(){
+      doAnimation();
       var loc = location.pathname.substring(location.pathname.lastIndexOf("/")+1);
       switch(loc){
         case "index.html":
