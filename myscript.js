@@ -58,7 +58,24 @@ $(document).ready(function(){
 
 
 })
-    //(document.getElementsByClassName("page")).click(locateMe());
+    
+    function doAnimation(){
+        $(".fastanim").each(function(){
+              $(this).addClass("slide1");  
+        });
+
+      
+      $(window).scroll(function() {
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide1");
+            }
+        });
+      });
+    };
 
     function locateMe(){
       var loc = location.pathname.substring(location.pathname.lastIndexOf("/")+1);

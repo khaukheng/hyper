@@ -22,7 +22,7 @@
 
 	<script src="myscript.js" type="text/javascript"></script>
 </head>
-<body onload="locateMe(); checkcurrentlevel()">
+<body onload="locateMe(); checkcurrentlevel(); doAnimation()">
 <!--Auto open The Modal-->
 
 	<div class="container-fluid">
@@ -117,7 +117,7 @@
 	      <div class="header" id="Definition">
 		      <h1 class="heading">Treatment Options</h1>
 		  </div>
-            <div class="content" id="plan1">
+            <div class="content fastanim" id="plan1">
 				<h2>Option #1: Anti-thyroid Drugs</h2>
                 <dl>
 					<dt>Treatment: Thionamides medicines</dt>
@@ -128,7 +128,7 @@
 					<dd>Take daily for a month or two before notice any improvement in condition. The treatment continues for about one to two years and the dose is slowly reduced until it is finally stopped.</dd>
 					</dl>
 			</div>
-            <div class="content" id="plan2">
+            <div class="content slideanim" id="plan2">
 				<h2>Option #2: Radioactive Iodine (RAI)</h2>
 				<dl>
 					<dt>Treatment: Radiation</dt>
@@ -146,7 +146,7 @@
 					</dd>
 				</dl>
 			</div>
-			<div class="content" id="plan3">
+			<div class="content slideanim" id="plan3">
 				<h2>Option #3: Thyroid Surgery (thyroidectomy)</h2>
 				<dl>
 					<dt>Treatment: Surgery</dt>
