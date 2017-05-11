@@ -25,6 +25,12 @@ div.header{
       }
 
 
+
+#foo{
+  padding-right:0px;
+  padding-left:0px;
+}
+
 div.whiteborder{
         background-color: white;
         background-color: rgba(255, 255, 255, 0.7);
@@ -203,6 +209,11 @@ div.content{
     color: #fff;
     min-height: 30px;
     padding: 7px 0;
+}
+
+/*nav color*/
+nav.navbar{
+  background-color: #CCC;
 }
 
 /* The Modal (background) */
