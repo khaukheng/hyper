@@ -58,8 +58,9 @@ $(document).ready(function(){
             if (pos < winTop + 600) {
               $(this).addClass("slide1");
             }
-            if($(window).scrollTop() + $(window).height() == $(document).height()) {
+            if(winTop + $(window).height() == $(document).height()) {
               $(this).addClass("slide1");
+              alert("bottom");
             }
         });
       });
