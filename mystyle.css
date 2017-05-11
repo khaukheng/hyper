@@ -165,7 +165,24 @@ bootstrap.css:6457
 .design a {
     color: #fff;
 }
+/*zhong qi*/
+dl>dd{
+  padding-bottom: 10px;  
+}
 
+div.content{
+    border-style: solid;
+    border-color: darkcyan;
+    border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  color: black;
+  text-align: left;
+  overflow: auto;
+}
 /*
 .title{
   color:blue;
