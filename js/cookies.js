@@ -38,6 +38,17 @@ function section1(){
 }
 
 function section2(){
+	var sum = 0;
+	for (var i = 0; i < 4; i++) {
+		var element = "section2_" + i;
+		if(document.getElementsByName(element)[0].checked || document.getElementsByName(element)[1].checked){
+			sum = sum + 1;
+		}
+	}
+	if(sum!=4){
+		notify("Please kindly check every questions before proceeding.");
+		return;
+	}
 	setCookie('section2','',0.5);
 	var cookies = getCookie('section2');
 	for (var i = 0; i < 4; i=i+1) {
@@ -55,23 +66,45 @@ function section2(){
 }
 
 function section3(){
-	setCookie('section3','',0.5);
-	var cookies = getCookie('section3');
-	if(document.getElementsByName('section3_0')[0].checked){
-		cookies = cookies + '1';
-		setCookie('section3',cookies,0.5);
-	}
-	else{
-		cookies = cookies + '0';
-		setCookie('section3',cookies,0.5);
-	}
-	for (var i = 0; i < 3; i++) {
-		if(document.getElementsByName('section3_1')[i].checked){
-			cookies = cookies + i;
+	if(document.getElementsByName('section3_0')[0].checked || document.getElementsByName('section3_0')[1].checked){
+		setCookie('section3','',0.5);
+		var cookies = getCookie('section3');
+		if(document.getElementsByName('section3_0')[0].checked){
+			cookies = cookies + '1';
 			setCookie('section3',cookies,0.5);
 		}
+		else{
+			cookies = cookies + '0';
+			setCookie('section3',cookies,0.5);
+		}
+		for (var i = 0; i < 3; i++) {
+			if(document.getElementsByName('section3_1')[i].checked){
+				cookies = cookies + i;
+				setCookie('section3',cookies,0.5);
+			}
+		}
+		next();
 	}
-	next();
+	else{
+		notify("Please tell us whether you are ready or not by checking the button above.");
+		return;
+	}
+}
+
+function notify(message){
+	new Noty({
+		type: 'notification',
+		layout: 'bottomRight',
+		theme: 'sunset',
+		text: message,
+		timeout: 4000,
+		progressBar: true,
+		closeWith: ['click', 'button'],
+		animation: {
+		open: 'noty_effects_open',
+		close: 'noty_effects_close'
+		},
+	}).show();
 }
 
 function printpdf(){
