@@ -55,7 +55,7 @@ $(document).ready(function(){
           var pos = $(this).offset().top;
 
           var winTop = $(window).scrollTop();
-            if (pos < winTop + 200) {
+            if (pos < winTop + 800) {
               $(this).addClass("slide1");
             }
             if(winTop + $(window).height() == $(document).height()) {
