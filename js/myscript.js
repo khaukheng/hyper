@@ -90,8 +90,8 @@ $(document).ready(function(){
         case "page7.html":
           checkCookie(7);
           break;
-        case "default":
-          alert("No Such page exist");
+        default:
+          checkCookie(1);
           break;
       }
     }
@@ -171,7 +171,7 @@ $(document).ready(function(){
         case "page7.html":
           location.href="page6.html";
           break;
-        case "default":
+        default:
           alert("previous page not found");
           break;
       }
@@ -200,8 +200,8 @@ $(document).ready(function(){
         case "page7.html":
           alert("no next page found");
           break;
-        case "default":
-          alert("previous page not found");
+        default:
+          location.href="page2.html";
           break;
       }
       };
